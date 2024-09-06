@@ -1,8 +1,8 @@
 import Api from "../api/api.js";
-import { PhotographerHeader } from '../templates/photographerheader.js';
-import { PhotographerMedias } from "../templates/photographermedias.js";
-import { Photographer } from "../models/photographer.js";
-import { MediasFactory } from "../factories/mediasfactory.js";
+import PhotographerHeader from '../templates/photographerheader.js';
+import PhotographerMedias  from "../templates/photographermedias.js";
+import Photographer from '../models/photographer.js';
+import  MediasFactory from '../factories/mediasfactory.js';
 import { displayTotalLikes } from "../models/likes.js";
 import { openCloseFormContact, validateForm } from "../utils/form.js";
 import { openCloseFilterMenu, displayMediaWithFilter } from "../utils/filter.js";
