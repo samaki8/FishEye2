@@ -180,7 +180,7 @@ form div {
     flex-direction: column;
     width: 100%;
     align-items: self-start;
-    margin-bottom: 26px;
+    margin-bottom: 2px;
 }
 
 form input {
@@ -292,7 +292,8 @@ form input {
     /*top: 10%;
     left: 30%; */
     transform: translate(-50%, -50%) translateY(-150px);
-    width: 669px;
+   /* width: 669px;*/
+  width: 44%;
     max-height: 900px; /* Ajustez la hauteur en fonction de vos besoins */
     border-radius: 5px;
     background-color: #DB8876;
@@ -304,6 +305,7 @@ form input {
     opacity: 0;
     animation: fadeIn .3s ease-in-out forwards;
     overflow-y: auto;
+    height: 90%;
 }
 
 
@@ -311,14 +313,14 @@ form input {
 .modal_form form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /*gap: 10px;*/
     width: 100%;
 }
 
 .form_content {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+   /* gap: 5px;*/
 }
 
 .form_content label {
@@ -353,7 +355,7 @@ opacity: 0px;
 
 .form_content span {
     color: black;
-    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+    font-size: 15px;
 }
 
 .form_content input:invalid:focus,
