@@ -10,13 +10,13 @@ export default class PhotographerMedias {
           <section class="gallery">
               ${this.medias.map(media => {
           const mediaContent = media.image
-              ? ` <img class="gallery_thumbnail" src="./assets/images/${this.photographer.name}/${media.image}" alt="${media.alt}">`
-              : ` <video class="gallery_thumbnail" aria-label="${media.alt}">
+              ? ` <img class="gallery_thumbnail" src="./assets/images/${this.photographer.name}/${media.image}" alt="${media.title}">`
+              : ` <video class="gallery_thumbnail" aria-label="${media.title}">
                       <source src="./assets/images/${this.photographer.name}/${media.video}" type="video/mp4">
                   </video>`;
           return `
                   <article class="gallery_card">                           
-                      <a href="#" data-media=${media.id} role="link" aria-label="View media large">
+                      <a href="#" data-media=${media.id} role="link" aria-label="View media">
                           <figure>${mediaContent}</figure>
                       </a>
                       <figcaption>

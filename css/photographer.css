@@ -293,19 +293,21 @@ form input {
     left: 30%; */
     transform: translate(-50%, -50%) translateY(-150px);
    /* width: 669px;*/
-  width: 44%;
-    max-height: 900px; /* Ajustez la hauteur en fonction de vos besoins */
+  width: 47%;
+  /*  max-height: 900px;*/
     border-radius: 5px;
     background-color: #DB8876;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 15px;
     opacity: 0;
     animation: fadeIn .3s ease-in-out forwards;
     overflow-y: auto;
-    height: 90%;
+    height: 97%;
+    top: 3%;
+    left: 30%;
 }
 
 
@@ -320,16 +322,16 @@ form input {
 .form_content {
     display: flex;
     flex-direction: column;
-   /* gap: 5px;*/
+    gap: 5px;
 }
 
 .form_content label {
     color: #312E2E;
     
     font-family: DM Sans;
-font-size: 36px;
+font-size: 30px;
 font-weight: 400;
-line-height: 46.87px;
+line-height: 38px;
 text-align: left;
 
 }
@@ -348,7 +350,7 @@ text-align: left;
     padding: 10px;
     width: 100%;
 gap: 0px;
-border-radius: 5px 0px 0px 0px;
+border-radius: 5px;
 opacity: 0px;
 
 }
@@ -501,7 +503,8 @@ aside{
 
 .modal_form_title{
     width: 100%;
-    font-size: 64px;;
+    font-size: 64px;
+    /*font-size: 6.4 vh;*/
 }
 
 .modal_form_title h2 {
@@ -510,12 +513,16 @@ aside{
     align-items: center;
     
     font-family: DM Sans;
-font-size: 64px;
+font-size: 54px;
 font-weight: 400;
-line-height: 83.33px;
+line-height: 50px;
 text-align: left;
 
     
+}
+.modal_form_name {
+    font-size: 54px;
+    line-height: 55px;
 }
 
 .btn_close:hover::before{
@@ -582,7 +589,7 @@ text-align: left;
 
 .dropdown_content li {
     position: relative;
-    width: 150px;
+    /*width: 150px;*/
 }
 
 .dropdown_content li::before{
@@ -910,6 +917,8 @@ max-width: 1050px;
         justify-content: space-around;
         padding: 20px;
     }
+    
+
 }
 
 @media screen and (max-width: 725px) {
@@ -1000,3 +1009,20 @@ max-width: 1050px;
         right: 10px;
     } 
 }
+
+/*
+@media screen and (max-width:1200px) {
+    .modal_form_title h2 {
+        font-size: 34px;
+        line-height: 70px;
+    }
+    .modal_form_name {
+        font-size: 34px;
+        line-height: 70px;
+    }
+    .form_content label {
+        line-height: 76 px;
+        font-size: 30px;
+    }
+}
+*/
