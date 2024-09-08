@@ -15,6 +15,8 @@ export const validateForm = () => {
     const lastName = document.querySelector("#lastname");
     const email = document.querySelector("#email");
     const message = document.querySelector("#message");
+    const formName = document.querySelector(".modal_form_name");
+ formName.textContent = this.photographer?.name ?? "Nom du photographe inconnu";
 
     form.addEventListener('input', () => displayCustomMessage());
 

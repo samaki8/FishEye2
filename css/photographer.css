@@ -306,8 +306,9 @@ form input {
     animation: fadeIn .3s ease-in-out forwards;
     overflow-y: auto;
     height: 97%;
-    top: 3%;
-    left: 30%;
+    top: 2%;
+    bottom: 2%;
+   
 }
 
 
