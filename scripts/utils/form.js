@@ -55,7 +55,8 @@ export const validateForm = () => {
 
     const displayCustomMessage = () => {
         const regexName = /^([A-Za-z|\s]{3,15})?([-]{0,1})?([A-Za-z|\s]{3,15})$/;
-        const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+       /* const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;*/
+        const regexEmail = /^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$/;
         const regexMessage = /^[A-Za-z0-9|\s]{20,200}$/;
 
         checkInputValidity(firstName, regexName);
