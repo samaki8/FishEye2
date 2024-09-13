@@ -5,9 +5,11 @@ export default class PhotographerHeader {
 
     createPhotographerHeader() {
         const profilePageHeader = document.querySelector(".main_about");
-
-        document.addEventListener('DOMContentLoaded', () => {
+        const formName = document.querySelector(".modal_form_name");
+        formName.textContent = this.photographer.name;
+        /*document.addEventListener('DOMContentLoaded', () => {
             const formName = document.querySelector(".modal_form_name");
+            
             if (formName) {
                 if (this.photographer && this.photographer.name) {
                     formName.textContent = this.photographer.name;
@@ -16,7 +18,7 @@ export default class PhotographerHeader {
                     formName.textContent = "Nom du photographe inconnu";
                 }
             }
-        });
+        });*/
 
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
@@ -31,7 +33,7 @@ export default class PhotographerHeader {
         if (profilePageHeader) {
             const about = `
                 <div class="photographer_profile__infos">
-                    <h2 class="photographer_name">${this.photographer?.name ?? "Nom du photographe inconnu"}</h2>
+                    <h1 class="photographer_name">${this.photographer?.name ?? "Nom du photographe inconnu"}</h1>
                     <h3 class="photographer_location">${this.photographer?.city ?? "Ville inconnue"}, ${this.photographer?.country ?? "Pays inconnu"}</h3>
                     <p class="photographer_tagline">${this.photographer?.tagline ?? "Aucune description disponible"}</p>    
                 </div>

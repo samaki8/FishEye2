@@ -7,6 +7,7 @@ export function photographerTemplate(data) {
         const article = document.createElement('article');
         const img = document.createElement('img');
         img.setAttribute('src', picture);
+        img.setAttribute('alt', `Portrait de ${name}`); 
         const h2 = document.createElement('h2');
         const h3 = document.createElement('h3');
         const pTagline = document.createElement('p');
